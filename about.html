@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get to know CARX, your trusted partner for a better car-buying experience in Phnom Penh." />
+    <title>About CARX — Your trusted car partner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="about.js" defer></script>
+  </head>
+  <body class="about-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="CARX home"><span class="brand-mark">C</span>CAR<span class="brand-x">X</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html#home">Home</a>
+        <a class="nav-link" href="product.html#inventory">Product</a>
+        <a class="nav-link active" href="about.html" aria-current="page">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-icon-button search-button" href="product.html?focusSearch=1#inventory" aria-label="Search cars" title="Search cars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <span>Search cars</span>
+        </a>
+        <a class="header-icon-button" href="product.html#inventory" aria-label="View cars" title="View cars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-page-content">
+        <p class="about-tagline">Your trusted partner in finding the perfect luxury vehicle</p>
+        <div class="about-story">
+          <div class="about-photo-wrap">
+            <img
+              class="about-photo"
+              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+              alt="A premium car ready for the road"
+            />
+            <span class="about-since">Since 2019</span>
+          </div>
+          <div class="about-copy">
+            <p>Welcome to <strong>CARX</strong>, your trusted partner in finding the perfect luxury vehicle. With years of experience in the automotive industry, we pride ourselves on offering premium cars with exceptional service.</p>
+            <p>Our mission is to provide car enthusiasts with a seamless buying experience, from selection to delivery. We offer a curated collection of new and used vehicles, backed by financing, servicing, and support at every mile.</p>
+            <div class="about-actions">
+              <a class="button button-primary" href="product.html#inventory">Browse cars</a>
+              <a class="button about-contact-button" href="contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats" aria-label="CARX achievements">
+          <article class="about-stat"><strong>50+</strong><span>Premium cars</span></article>
+          <article class="about-stat"><strong>100%</strong><span>Customer satisfaction</span></article>
+          <article class="about-stat"><strong>5+</strong><span>Years of excellence</span></article>
+          <article class="about-stat"><strong>1000+</strong><span>Happy customers</span></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <section class="footer-brand-column" aria-label="About CARX">
+          <a class="footer-brand" href="index.html#home" aria-label="CARX home">CAR<span>X</span></a>
+          <p>A curated collection of premium new and used vehicles, backed by friendly service and support at every mile.</p>
+          <form class="newsletter-form" action="mailto:mrrsem8065@gmail.com" method="post" enctype="text/plain">
+            <label for="newsletter-email">GET NEW ARRIVALS IN YOUR INBOX</label>
+            <div class="newsletter-control">
+              <input id="newsletter-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+              <button type="submit">Join</button>
+            </div>
+          </form>
+        </section>
+        <nav class="footer-column" aria-label="Explore">
+          <h2>EXPLORE</h2>
+          <a href="product.html#inventory">New inventory</a>
+          <a href="product.html#inventory">Used inventory</a>
+          <a href="contact.html">Sell your car</a>
+          <a href="contact.html">Financing</a>
+        </nav>
+        <nav class="footer-column" aria-label="Services">
+          <h2>SERVICES</h2>
+          <a href="contact.html">Book a service</a>
+          <a href="contact.html">Extended warranty</a>
+          <a href="contact.html">Roadside assistance</a>
+          <a href="contact.html">Insurance</a>
+        </nav>
+        <nav class="footer-column" aria-label="Company">
+          <h2>COMPANY</h2>
+          <a href="about.html">About CARX</a>
+          <a href="contact.html">Careers</a>
+          <a href="contact.html">Press</a>
+          <a href="contact.html">Contact us</a>
+        </nav>
+        <section class="footer-showroom" aria-label="Showroom information">
+          <h2>VISIT THE SHOWROOM</h2>
+          <p>128 Phnom Penh Thmey, Phnom Penh</p>
+          <p>Open daily, 9:00 AM – 7:00 PM</p>
+          <a href="tel:+855888111731">+855 888 111 731</a>
+          <a href="mailto:mrrsem8065@gmail.com">mrrsem8065@gmail.com</a>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> CARX. All rights reserved.</span>
+        <nav aria-label="Legal">
+          <a href="contact.html">Privacy policy</a>
+          <a href="contact.html">Terms of service</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

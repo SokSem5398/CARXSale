@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact CARX in Phnom Penh. Call, email, visit our showroom, or send us a message." />
+    <title>Contact CARX — Get in touch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="contact.js" defer></script>
+  </head>
+  <body class="contact-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="CARX home"><span class="brand-mark">C</span>CAR<span class="brand-x">X</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html#home">Home</a>
+        <a class="nav-link" href="product.html#inventory">Product</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-icon-button search-button" href="product.html?focusSearch=1#inventory" aria-label="Search cars" title="Search cars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <span>Search cars</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="contact-heading">
+          <div class="contact-eyebrow"><span></span>CONTACT<span></span></div>
+          <h1>GET IN <span>TOUCH</span></h1>
+          <div class="contact-heading-mark"></div>
+          <p>Have questions? We’d love to hear from you.</p>
+        </div>
+
+        <div class="contact-cards">
+          <article class="contact-card">
+            <span class="contact-card-icon" aria-hidden="true">📍</span>
+            <h2>Visit Us</h2>
+            <p>128 Phnom Penh Thmey, Phnom Penh</p>
+          </article>
+          <article class="contact-card">
+            <span class="contact-card-icon" aria-hidden="true">📞</span>
+            <h2>Call Us</h2>
+            <a href="tel:+855888111731">+855 888 111 731</a>
+          </article>
+          <article class="contact-card">
+            <span class="contact-card-icon" aria-hidden="true">✉️</span>
+            <h2>Email Us</h2>
+            <a href="mailto:mrrsem8065@gmail.com">mrrsem8065@gmail.com</a>
+          </article>
+          <article class="contact-card">
+            <span class="contact-card-icon" aria-hidden="true">🕒</span>
+            <h2>Opening Hours</h2>
+            <p>Mon – Sun: 9:00 AM – 7:00 PM</p>
+          </article>
+        </div>
+
+        <div class="contact-lower">
+          <form class="contact-form" id="contact-form">
+            <div class="contact-form-fields">
+              <label>
+                Full Name *
+                <input type="text" name="name" placeholder="John Doe" autocomplete="name" required />
+              </label>
+              <label>
+                Email *
+                <input type="email" name="email" placeholder="john@example.com" autocomplete="email" required />
+              </label>
+            </div>
+            <label>
+              Subject *
+              <input type="text" name="subject" placeholder="How can we help?" required />
+            </label>
+            <label>
+              Message *
+              <textarea name="message" rows="5" placeholder="Tell us what you’re looking for..." required></textarea>
+            </label>
+            <button class="button button-primary contact-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+            <p class="contact-form-note" id="contact-form-note" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-map">
+            <iframe
+              title="Map showing Phnom Penh Thmey, Phnom Penh"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=104.84%2C11.54%2C105.02%2C11.66&amp;layer=mapnik&amp;marker=11.603%2C104.89"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a class="map-link" href="https://www.openstreetmap.org/?mlat=11.603&amp;mlon=104.89#map=15/11.603/104.89" target="_blank" rel="noreferrer">Open map in a new tab ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <section class="footer-brand-column" aria-label="About CARX">
+          <a class="footer-brand" href="index.html#home" aria-label="CARX home">CAR<span>X</span></a>
+          <p>A curated collection of premium new and used vehicles, backed by friendly service and support at every mile.</p>
+          <form class="newsletter-form" action="mailto:mrrsem8065@gmail.com" method="post" enctype="text/plain">
+            <label for="newsletter-email">GET NEW ARRIVALS IN YOUR INBOX</label>
+            <div class="newsletter-control">
+              <input id="newsletter-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+              <button type="submit">Join</button>
+            </div>
+          </form>
+        </section>
+        <nav class="footer-column" aria-label="Explore">
+          <h2>EXPLORE</h2>
+          <a href="product.html#inventory">New inventory</a>
+          <a href="product.html#inventory">Used inventory</a>
+          <a href="contact.html">Sell your car</a>
+          <a href="contact.html">Financing</a>
+        </nav>
+        <nav class="footer-column" aria-label="Services">
+          <h2>SERVICES</h2>
+          <a href="contact.html">Book a service</a>
+          <a href="contact.html">Extended warranty</a>
+          <a href="contact.html">Roadside assistance</a>
+          <a href="contact.html">Insurance</a>
+        </nav>
+        <nav class="footer-column" aria-label="Company">
+          <h2>COMPANY</h2>
+          <a href="about.html">About CARX</a>
+          <a href="contact.html">Careers</a>
+          <a href="contact.html">Press</a>
+          <a href="contact.html">Contact us</a>
+        </nav>
+        <section class="footer-showroom" aria-label="Showroom information">
+          <h2>VISIT THE SHOWROOM</h2>
+          <p>128 Phnom Penh Thmey, Phnom Penh</p>
+          <p>Open daily, 9:00 AM – 7:00 PM</p>
+          <a href="tel:+855888111731">+855 888 111 731</a>
+          <a href="mailto:mrrsem8065@gmail.com">mrrsem8065@gmail.com</a>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> CARX. All rights reserved.</span>
+        <nav aria-label="Legal">
+          <a href="contact.html">Privacy policy</a>
+          <a href="contact.html">Terms of service</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
